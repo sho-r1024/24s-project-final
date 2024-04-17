@@ -16,17 +16,6 @@ create table if not exists User (
 #
 # )
 
-create table if not exists Feedback (
-    feedback_id int NOT NULL AUTO_INCREMENT,
-    user_id int,
-    rating int,
-    check(rating >= 1 and rating <= 100),
-    PRIMARY KEY (feedback_id),
-    CONSTRAINT fk_reviewer FOREIGN KEY (user_id)
-                                    REFERENCES User(user_id)
-                                    ON DELETE cascade ON UPDATE cascade
-);
-
 create table if not exists Labels (
     label_id int NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (label_id),
@@ -119,6 +108,21 @@ create table if not exists Services (
     CONSTRAINT fk_service_giver FOREIGN KEY (creative_id)
                                         REFERENCES Creatives(creative_id)
                                         ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+create table if not exists Feedback (
+    feedback_id int NOT NULL AUTO_INCREMENT,
+    music_id int NOT NULL,
+    user_id int,
+    rating int,
+    check(rating >= 1 and rating <= 100),
+    PRIMARY KEY (feedback_id),
+    CONSTRAINT fk_reviewer FOREIGN KEY (user_id)
+                                    REFERENCES User(user_id)
+                                    ON DELETE cascade ON UPDATE cascade
+    CONSTRAINT fk_feedback_music FOREIGN KEY (music_id)
+                                    REFERENCES Music(music_id)
+                                    ON DELETE cascade ON UPDATE cascade
 );
 
 
