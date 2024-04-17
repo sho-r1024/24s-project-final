@@ -12,9 +12,17 @@ create table if not exists User (
 	bio text
 );
 
-# create table if not exists Feed (
-#
-# )
+create table if not exists Feed (
+    user_id int NOT NULL,
+    spotlight boolean,
+    followed boolean,
+    search boolean,
+    PRIMARY KEY (user_id),
+    CONSTRAINT fk_user_01 FOREIGN KEY (user_id)
+                                        REFERENCES User(user_id)
+                                        ON DELETE CASCADE ON UPDATE CASCADE
+
+);
 
 create table if not exists Labels (
     label_id int NOT NULL AUTO_INCREMENT,
