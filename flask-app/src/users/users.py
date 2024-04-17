@@ -4,6 +4,7 @@ from src import db
 
 user = Blueprint('user', __name__)
 
+# gets all users
 @user.route('/user', methods=['GET'])
 def get_all_users():
     # get a cursor object from the database
