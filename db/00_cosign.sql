@@ -21,6 +21,7 @@ create table if not exists Feed (
     CONSTRAINT fk_user_01 FOREIGN KEY (user_id)
                                         REFERENCES User(user_id)
                                         ON DELETE CASCADE ON UPDATE CASCADE
+
 );
 
 create table if not exists Labels (
@@ -29,6 +30,7 @@ create table if not exists Labels (
     name varchar(20),
     address varchar(50)
 );
+
 
 create table if not exists Managers (
     user_id int NOT NULL,
