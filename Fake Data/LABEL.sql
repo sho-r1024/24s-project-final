@@ -1,0 +1,66 @@
+create table LABEL (
+	L_ID VARCHAR(40),
+	NAME VARCHAR(50),
+	MEMBERS VARCHAR(16),
+	ADDRESS VARCHAR(50)
+);
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('eb6d821a-3d98-42b3-8170-b20103badcbc', 'Wordify', 'Brian Taylor', '7268 Nevada Parkway');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('bdfaad17-4dbd-4e40-a409-b932edd65ea9', 'Jaxspan', 'Sarah Wilson', '9026 5th Way');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('fa938518-f282-48a6-93fb-b0403c501034', 'Dabvine', 'Laura Garcia', '700 Transport Plaza');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('6380a27a-611a-4b51-86d5-fb989c81637b', 'Meevee', 'Emily Johnson', '7973 Ridgeview Parkway');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('05d67989-fa26-4da0-b54d-781f97791042', 'Meedoo', 'Laura Garcia', '457 Oriole Trail');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('3950220f-7f12-4e8c-895c-f0007f270bc2', 'Thoughtstorm', 'Jessica Martinez', '2652 Shopko Center');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('10ec099d-b84d-44b9-ba87-8b821016988d', 'Zooxo', 'Michael Brown', '01783 Drewry Alley');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('9e98629c-196b-4171-ae71-fcd6f5551a67', 'Meembee', 'Kevin Anderson', '315 8th Park');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('644c0298-2ca0-4edd-b87e-ca93743e06c6', 'Meejo', 'David Lee', '150 Comanche Center');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('0ca9537c-9258-477d-9c70-d22c850f96a7', 'Ntags', 'Laura Garcia', '8 Meadow Vale Way');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('e92b8547-3dca-4137-b3b9-fceec3bcc0a1', 'Wikizz', 'Sarah Wilson', '3 Chinook Road');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('b66651ec-a3e3-4807-9656-dff365374b61', 'Skimia', 'Sarah Wilson', '4 Rieder Trail');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('c22056fa-6d6b-4409-8c44-fd3bf8d8c6af', 'Photobug', 'Michael Brown', '92 Scoville Terrace');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('e6dc5048-0133-4dae-9c90-eded76ecdfee', 'Yakijo', 'Sarah Wilson', '3485 Almo Court');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('f896e0d3-39c2-4154-acf6-ea981a9dfdf6', 'Meeveo', 'Kevin Anderson', '74 Erie Place');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('2ef2a4c5-64f8-4365-bfb3-757e89797676', 'Agivu', 'Jessica Martinez', '7 Maple Parkway');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('bb41d1fa-8559-488c-89f7-78233173a0b4', 'Rhycero', 'David Lee', '2 Bluestem Pass');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('59a6432c-d0e8-4cde-a4cf-3f2b07e14e2b', 'Skipstorm', 'Alice Smith', '3855 Marquette Street');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('01c589bb-06a5-4ada-aabf-814b873b852a', 'Tambee', 'Alice Smith', '545 Little Fleur Center');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('8bf01583-12ce-4247-a0de-5a75a3b990d5', 'Agimba', 'Jessica Martinez', '6 Petterle Crossing');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('d6b6cbc0-3f4e-4286-86ac-14721bcad045', 'Zoonder', 'Sarah Wilson', '9066 Springview Way');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('de4d3728-2357-4d56-b0ae-307f3240376a', 'Agivu', 'Brian Taylor', '7315 Sunnyside Court');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('84cc0e2c-e0ab-43e0-9fc5-fd22dc9e29af', 'Riffpath', 'David Lee', '871 Merrick Pass');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('c416fb85-09f0-482c-aea0-aea1e9c2e590', 'Gabtype', 'David Lee', '4228 Vernon Parkway');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('1a668109-0b16-449d-b9f3-d10ce585e69d', 'Feedfire', 'Jessica Martinez', '8971 Nova Street');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('ce2ac88d-6e4c-40bf-af04-edc5307909bc', 'Centidel', 'Kevin Anderson', '02 Northridge Circle');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('c3af1e8b-8dda-471a-b1dc-0bbcd50c6389', 'Wordtune', 'Jessica Martinez', '30 Eagan Way');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('5f9b6078-8ad7-45f3-b81d-4b46756e263d', 'Quamba', 'Michael Brown', '7 Anthes Road');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('9c67b670-c044-4693-baa0-75a9a40b183a', 'Photobean', 'John Doe', '2625 Waywood Hill');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('d9d9f8a0-9462-4f9f-9a43-2f65bed58b66', 'Yambee', 'Alice Smith', '9137 Londonderry Way');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('1868f00a-3c5f-4712-98ae-3b478a09cdf9', 'Shufflester', 'Michael Brown', '74 Columbus Crossing');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('09cdf25e-a4b7-4aaa-829c-faec437a848e', 'Buzzshare', 'Laura Garcia', '79035 Delladonna Court');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('d4a38274-380d-4b7f-880b-ddbdcb2b0efd', 'Yodo', 'Michael Brown', '19 Arapahoe Avenue');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('d3ad23f9-c9e8-4e10-825b-3df30e62e7d6', 'Skalith', 'Jessica Martinez', '0 Laurel Hill');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('e06ee3d5-e34d-41d5-b8ee-f7a8c6a00a3d', 'Feedfish', 'John Doe', '3 Main Avenue');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('3189a010-25ca-40f9-b94e-7ec6b25f77bf', 'Meevee', 'Emily Johnson', '6826 Boyd Way');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('e81b65e6-c06b-45e9-bf70-447d5de1db36', 'Riffpedia', 'Alice Smith', '2 Harbort Hill');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('e918e56b-d2ac-4fe1-9d9f-12c12a9e0e8b', 'Dablist', 'Emily Johnson', '169 Fremont Way');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('927d9e32-442b-4c1c-8a41-b66afca8db5e', 'Zazio', 'Brian Taylor', '7 Ramsey Hill');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('d4939f6e-521d-4a38-aaea-2f9d4efab676', 'Oodoo', 'Alice Smith', '1509 Sommers Court');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('a4a59ef6-504c-44c4-921a-655a4410260e', 'Linkbridge', 'Michael Brown', '351 Nancy Junction');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('251c4aaa-e1d7-4a93-988a-2a6779c3d4ed', 'Skaboo', 'Emily Johnson', '41 Mesta Trail');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('fdb8d80a-4344-4aaf-b9c4-b53c1114c6c3', 'Voonder', 'Michael Brown', '07 Village Green Court');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('f531ace6-4d35-419c-8c95-182e149d537d', 'Abatz', 'Michael Brown', '57 Ronald Regan Point');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('730cc422-33c5-4e39-9d7a-1235f97e1a84', 'Fatz', 'Michael Brown', '4 Evergreen Trail');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('ba29bfe7-8b43-45b3-9f80-c1cec4699435', 'Skibox', 'Sarah Wilson', '8842 Blue Bill Park Center');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('f5db5464-e948-4eb4-be04-ec24c86fff4a', 'Browsecat', 'Emily Johnson', '58757 Columbus Parkway');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('6e9fd33d-8936-4a65-9970-bcdede7968ea', 'Realblab', 'Jessica Martinez', '2889 Fulton Court');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('d7fc6969-55bf-4559-9eed-a56d66108479', 'Shuffledrive', 'Emily Johnson', '04220 Center Crossing');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('2fe9ae73-392e-422e-9578-7a49622ed6bc', 'Dabjam', 'Alice Smith', '834 Stuart Alley');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('b9622504-b27a-4f41-82d9-5272d6453e40', 'Topiczoom', 'Laura Garcia', '22332 Tony Place');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('b8a47eb3-2fb6-4da6-b95c-5d5501cc2f46', 'Skyndu', 'Sarah Wilson', '5749 Golf Pass');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('8be545ca-e03a-4d9e-97b9-9ef9403be221', 'Zava', 'Laura Garcia', '92 Mendota Road');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('2de9c8de-4455-44b6-b4ae-0a1ac29f1fc4', 'Wordtune', 'Brian Taylor', '77 Mockingbird Way');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('5f3e2aa1-ddef-493b-a0b6-5721ecd14489', 'Oyoloo', 'Alice Smith', '2 Larry Plaza');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('6327a3a0-b252-4ea7-8df5-615cdb506b71', 'Eabox', 'Sarah Wilson', '66339 Muir Terrace');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('0829d04e-84c3-4700-934b-293fda477746', 'Kimia', 'Emily Johnson', '80 Heffernan Place');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('6c16db12-1b7d-4961-a3a7-8c5b1ba96a2a', 'Babbleopia', 'Laura Garcia', '2915 Nelson Court');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('2e3e6492-51ad-4d0e-9db3-7066e1506e6b', 'Photospace', 'Alice Smith', '3032 New Castle Parkway');
+insert into LABEL (L_ID, NAME, MEMBERS, ADDRESS) values ('6a6d0d95-3350-45b4-818a-5f618aab67bb', 'Pixonyx', 'Michael Brown', '672 Bobwhite Lane');
