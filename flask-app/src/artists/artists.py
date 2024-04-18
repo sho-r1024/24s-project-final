@@ -43,12 +43,13 @@ def get_single_artist(artistID):
     return jsonify(json_data)
 
 # Gets all music from an artist
-@artists.route('/music', methods=['GET'])
-def get_all_music():
+@artists.route('/music/<artist_id>', methods=['GET'])
+def get_all_music(artist_id):
     cursor = db.get_db().cursor()
 
-    cursor.execute('SELECT * FROM Music')
-
+    cursor.execute(f"SELECT m.* FROM Music m JOIN Artists a ON m.artist_id = a.artist_id WHERE a.artist_id = %s", 
+            (artist_id,))
+    
     column_headers = [x[0] for x in cursor.description]
 
     json_data = []

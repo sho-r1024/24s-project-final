@@ -4,6 +4,7 @@ from src import db
 
 managers = Blueprint('managers', __name__)
 
+# Gets all managers from the database
 @managers.route('/managers', methods=['GET'])
 def get_all_managers():
     cursor = db.get_db().cursor()
@@ -21,6 +22,7 @@ def get_all_managers():
 
     return jsonify(json_data)
 
+# Finds the manager with the matching id
 @managers.route('/manager/<manager_id>', methods=['GET'])
 def get_single_manager(managerID):
     cursor = db.get_db().cursor()
@@ -40,6 +42,7 @@ def get_single_manager(managerID):
 
     return jsonify(json_data)
 
+# adds a new manager
 @managers.route('/manager', methods=['POST'])
 def add_new_manager():
     the_data = request.json
@@ -60,6 +63,7 @@ def add_new_manager():
 
     return 'Success!'
 
+# registers a manager with a label
 @managers.route('/labels', methods=['POST'])
 def register_new_label():
     the_data = request.json
