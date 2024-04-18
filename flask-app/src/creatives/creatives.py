@@ -76,7 +76,7 @@ def delete_portfolio():
 
 # Add a service
 @creatives.route('/services/add_service', methods=['POST'])
-def add_new_portfolio():
+def add_new_service():
     
     # collecting data from the request object 
     the_data = request.json
