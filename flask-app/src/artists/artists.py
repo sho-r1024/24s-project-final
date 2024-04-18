@@ -4,6 +4,7 @@ from src import db
 
 artists = Blueprint('artists', __name__)
 
+# Get all the artists from the database
 @artists.route('/artists', methods=['GET'])
 def get_all_artists():
     cursor = db.get_db().cursor()
@@ -21,6 +22,7 @@ def get_all_artists():
 
     return jsonify(json_data)
 
+# Get an artist that matches the applied id
 @artists.route('/artists/<artist_id>', methods=['GET'])
 def get_single_artist(artistID):
     cursor = db.get_db().cursor()
@@ -40,6 +42,7 @@ def get_single_artist(artistID):
 
     return jsonify(json_data)
 
+# Gets all music from an artist
 @artists.route('/music', methods=['GET'])
 def get_all_music():
     cursor = db.get_db().cursor()
@@ -86,6 +89,7 @@ def add_new_song():
     
     return 'Success!'
 
+# delete a song
 @artists.route('/music', methods=['DELETE'])
 def delete_song():
     
