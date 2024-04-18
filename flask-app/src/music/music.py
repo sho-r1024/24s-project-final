@@ -46,7 +46,7 @@ def delete_song():
 
     # Constructing the query
     query = 'delete from music where '
-    query += 'music_id = ' + music_id
+    query += 'music_id = ' + music_id + ';'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 
