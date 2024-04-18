@@ -86,6 +86,24 @@ def add_new_song():
     
     return 'Success!'
 
+@artists.route('/label/join_label/<label_id>', methods=['PUT'])
+def join_label():
+    the_data = request.json
+    current_app.logger.info(the_data)
+    
+    label_id = the_data['label_id']
+    artist_id = the_data['artist_id']
+
+    query = "update Artists " \
+    f"set label_id = {label_id} " \
+    f"where artist_id = {artist_id} "
+
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+
+    return 'Success!'
+
 @artists.route('/music', methods=['DELETE'])
 def delete_song():
     

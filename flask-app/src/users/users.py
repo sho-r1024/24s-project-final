@@ -43,7 +43,6 @@ def update_user(userID):
     bio = the_data['user_bio']
     email = the_data['user_email']
     # social_media = the_data['product_category']
-
     # Constructing the query
     
     query = f"update User " \
@@ -58,7 +57,7 @@ def update_user(userID):
     
     return 'Success!'
 
-@user.route('/user/bio/<userID>', methods=['PUT'])
+@user.route('/user/<userID>/bio', methods=['PUT'])
 def update_user_bio(userID):
     # collecting data from the request object 
     the_data = request.json
@@ -67,7 +66,6 @@ def update_user_bio(userID):
     #extracting the variable
     bio = the_data['user_bio']
     # social_media = the_data['product_category']
-
     # Constructing the query
     query = f"update User " \
         f"set bio = '{bio}' " \

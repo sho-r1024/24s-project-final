@@ -1,11 +1,11 @@
-from flask import Blueprint, request, jsonify, make_response
+from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
-customers = Blueprint('feedback', __name__)
+fans = Blueprint('fans', __name__)
 
 # give feedback to a song
-@feedback.route('/fans', methods=['POST'])
+@fans.route('/fans', methods=['POST'])
 def rate(song, rating):
     the_data = request.json
     current_app.logger.info(the_data)
@@ -17,7 +17,7 @@ def rate(song, rating):
     rating = the_data['rating']
 
     # Constructing the query
-    query = 'insert into feedback (feedback_id, music_id, user_id, ratign) values ("'
+    query = 'insert into feedback (feedback_id, music_id, user_id, rating) values ("'
     query += feedback_id + '", "'
     query += song + '", "'
     query += user_id + '", '
