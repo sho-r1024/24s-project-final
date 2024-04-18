@@ -35,6 +35,9 @@ def create_app():
     # Import the various Beluprint Objects
     from src.users.users import user
     from src.artists.artists import artists
+    from src.managers.managers import managers
+    from src.creatives.creatives import creatives
+    from src.fans.fans import fans
 
     # Register the routes from each Blueprint with the app object
     # and give a url prefix to each
@@ -42,6 +45,9 @@ def create_app():
     # app.register_blueprint(products,    url_prefix='/p')
     app.register_blueprint(user, url_prefix='/u')
     app.register_blueprint(artists, url_prefix='/a')
+    app.register_blueprint(managers, url_prefix='/m')
+    app.register_blueprint(creatives, url_prefix='/c')
+    app.register_blueprint(fans, url_prefix='/f')
 
     # Don't forget to return the app object
     return app

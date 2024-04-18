@@ -36,7 +36,7 @@ create table if not exists Labels (
 
 create table if not exists Managers (
     user_id int NOT NULL,
-    label_id int NOT NULL,
+    label_id int,
     PRIMARY KEY (user_id, label_id),
     CONSTRAINT fk_manager_01 FOREIGN KEY (user_id)
                                            REFERENCES User(user_id)
@@ -68,8 +68,8 @@ create table if not exists Contracts (
     PRIMARY KEY (contract_id),
     contract_date DATETIME default current_timestamp,
     contract_artist_id int NOT NULL,
-    contract_label_id int NOT NULL,
-    contract_manager_id int NOT NULL,
+    contract_label_id int,
+    contract_manager_id int,
     CONSTRAINT fk_artist_id FOREIGN KEY (contract_artist_id)
                                 REFERENCES Artists(artist_id)
                                 ON DELETE cascade ON UPDATE cascade,
@@ -348,16 +348,16 @@ insert into Creatives (creative_id, follower_count) values (20, 851314276);
 -- insert into Feedback (feedback_id, item_id, user_id, rating) values (79, 79, 79, 6);
 -- insert into Feedback (feedback_id, item_id, user_id, rating) values (80, 80, 80, 8);
 
--- insert into Music (song_id, artist_id, genre, playtime) values (1, 1, 'Reggae', '4:30');
--- insert into Music (song_id, artist_id, genre, playtime) values (2, 2, 'Hip Hop', '3:00');
--- insert into Music (song_id, artist_id, genre, playtime) values (3, 3, 'Pop', '2:15');
--- insert into Music (song_id, artist_id, genre, playtime) values (4, 4, 'Pop', '2:15');
--- insert into Music (song_id, artist_id, genre, playtime) values (5, 5, 'R&B', '3:45');
--- insert into Music (song_id, artist_id, genre, playtime) values (6, 6, 'Pop', '3:00');
--- insert into Music (song_id, artist_id, genre, playtime) values (7, 7, 'Rock', '3:45');
--- insert into Music (song_id, artist_id, genre, playtime) values (8, 8, 'Rock', '3:45');
--- insert into Music (song_id, artist_id, genre, playtime) values (9, 9, 'Metal', '3:00');
--- insert into Music (song_id, artist_id, genre, playtime) values (10, 10, 'Metal', '4:30');
+insert into Music (song_id, artist_id, genre, playtime) values (1, 1, 'Reggae', '4:30');
+insert into Music (song_id, artist_id, genre, playtime) values (2, 2, 'Hip Hop', '3:00');
+insert into Music (song_id, artist_id, genre, playtime) values (3, 3, 'Pop', '2:15');
+insert into Music (song_id, artist_id, genre, playtime) values (4, 4, 'Pop', '2:15');
+insert into Music (song_id, artist_id, genre, playtime) values (5, 5, 'R&B', '3:45');
+insert into Music (song_id, artist_id, genre, playtime) values (6, 6, 'Pop', '3:00');
+insert into Music (song_id, artist_id, genre, playtime) values (7, 7, 'Rock', '3:45');
+insert into Music (song_id, artist_id, genre, playtime) values (8, 8, 'Rock', '3:45');
+insert into Music (song_id, artist_id, genre, playtime) values (9, 9, 'Metal', '3:00');
+insert into Music (song_id, artist_id, genre, playtime) values (10, 10, 'Metal', '4:30');
 
 -- insert into Portfolios (portfolio_id, author_id, title, views) values (1, 11, 'Light of Day', 93020880);
 -- insert into Portfolios (portfolio_id, author_id, title, views) values (2, 12, 'Going My Way', 853530499);

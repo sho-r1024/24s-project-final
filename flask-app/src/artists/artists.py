@@ -89,7 +89,6 @@ def add_new_song():
     
     return 'Success!'
 
-# delete a song
 @artists.route('/music', methods=['DELETE'])
 def delete_song():
     
