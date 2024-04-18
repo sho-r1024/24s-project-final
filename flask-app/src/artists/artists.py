@@ -60,7 +60,7 @@ def get_all_music():
 
     return jsonify(json_data)
 
-# add a new song
+# Add a new song
 @artists.route('/music/add_song', methods=['POST'])
 def add_new_song():
     
@@ -89,6 +89,7 @@ def add_new_song():
     
     return 'Success!'
 
+# Delete a song
 @artists.route('/music', methods=['DELETE'])
 def delete_song():
     
