@@ -22,6 +22,40 @@ def get_all_managers():
 
     return jsonify(json_data)
 
+@managers.route('/contracts', methods=['GET'])
+def get_all_contracts():
+    cursor = db.get_db().cursor()
+
+    cursor.execute(f'SELECT first_name, last_name FROM Contracts JOIN (Artists JOIN User ON Artists.artist_id = User.user_id) ON Artists.artist_id = Contracts.contract_artist_id')
+
+    column_headers = [x[0] for x in cursor.description]
+
+    json_data = []
+
+    theData = cursor.fetchall()
+
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
+@managers.route('/contracts/<managerID>', methods=['GET'])
+def get_all_manager_contracts(managerID):
+    cursor = db.get_db().cursor()
+
+    cursor.execute(f'SELECT first_name, last_name FROM Contracts JOIN (Artists JOIN User ON Artists.artist_id = User.user_id) ON Artists.artist_id = Contracts.contract_artist_id')
+
+    column_headers = [x[0] for x in cursor.description]
+
+    json_data = []
+
+    theData = cursor.fetchall()
+
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    return jsonify(json_data)
+
 # Finds the manager with the matching id
 @managers.route('/manager/<manager_id>', methods=['GET'])
 def get_single_manager(managerID):
