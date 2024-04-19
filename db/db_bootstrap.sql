@@ -139,7 +139,11 @@ SELECT * FROM Music;
 
 insert into User (user_id, first_name, last_name, email, social_media, bio) values (1, 'Hi', 'Burling', 'hburling0@unesco.org', '@CDFnBi', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.'); --
 insert into User (user_id, first_name, last_name, email, social_media, bio) values (2, 'Olivero', 'Neaverson', 'oneaverson1@arizona.edu', '@VRdnzv', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+<<<<<<< HEAD
 Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.'); --
+=======
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.'); 
+>>>>>>> 88a4ed9dfeef6cc1e1972519ad97894f397bcc4a
 insert into User (user_id, first_name, last_name, email, social_media, bio) values (3, 'Elva', 'Hamor', 'ehamor2@berkeley.edu', '@GtDeuiqLE', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.');
 insert into User (user_id, first_name, last_name, email, social_media, bio) values (4, 'Wash', 'Enbury', 'wenbury3@networkadvertising.org', '@hqcbWVQeSE', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
 
@@ -360,16 +364,16 @@ insert into Music (song_id, artist_id, genre, playtime) values (8, 8, 'Rock', '3
 insert into Music (song_id, artist_id, genre, playtime) values (9, 9, 'Metal', '3:00');
 insert into Music (song_id, artist_id, genre, playtime) values (10, 10, 'Metal', '4:30');
 
--- insert into Portfolios (portfolio_id, author_id, title, views) values (1, 11, 'Light of Day', 93020880);
--- insert into Portfolios (portfolio_id, author_id, title, views) values (2, 12, 'Going My Way', 853530499);
--- insert into Portfolios (portfolio_id, author_id, title, views) values (3, 13, 'Signs', 70289852);
--- insert into Portfolios (portfolio_id, author_id, title, views) values (4, 14, 'Lotta 2: Lotta flyttar hemifrån', 762544173);
--- insert into Portfolios (portfolio_id, author_id, title, views) values (5, 15, 'Point of No Return', 314545126);
--- insert into Portfolios (portfolio_id, author_id, title, views) values (6, 16, 'Mysterious Mr. Moto', 210397893);
--- insert into Portfolios (portfolio_id, author_id, title, views) values (7, 17, 'Happy', 765856519);
--- insert into Portfolios (portfolio_id, author_id, title, views) values (8, 18, 'Wings of Hope (Julianes Sturz in den Dschungel)', 682757268);
--- insert into Portfolios (portfolio_id, author_id, title, views) values (9, 19, 'Salt', 705381679);
--- insert into Portfolios (portfolio_id, author_id, title, views) values (10, 20, 'Sky Fighters (Les Chevaliers Du Ciel)', 547243036);
+insert into Portfolios (portfolio_id, author_id, title, views) values (1, 11, 'Light of Day', 93020880);
+insert into Portfolios (portfolio_id, author_id, title, views) values (2, 12, 'Going My Way', 853530499);
+insert into Portfolios (portfolio_id, author_id, title, views) values (3, 13, 'Signs', 70289852);
+insert into Portfolios (portfolio_id, author_id, title, views) values (4, 14, 'Lotta 2: Lotta flyttar hemifrån', 762544173);
+insert into Portfolios (portfolio_id, author_id, title, views) values (5, 15, 'Point of No Return', 314545126);
+insert into Portfolios (portfolio_id, author_id, title, views) values (6, 16, 'Mysterious Mr. Moto', 210397893);
+insert into Portfolios (portfolio_id, author_id, title, views) values (7, 17, 'Happy', 765856519);
+insert into Portfolios (portfolio_id, author_id, title, views) values (8, 18, 'Wings of Hope (Julianes Sturz in den Dschungel)', 682757268);
+insert into Portfolios (portfolio_id, author_id, title, views) values (9, 19, 'Salt', 705381679);
+insert into Portfolios (portfolio_id, author_id, title, views) values (10, 20, 'Sky Fighters (Les Chevaliers Du Ciel)', 547243036);
 
 -- insert into Services (service_id, creative_id, title, price) values (21, 21, 'Country Bears, The', 235.86);
 -- insert into Services (service_id, creative_id, title, price) values (22, 22, 'Sherlock Holmes Faces Death', 902.54);
