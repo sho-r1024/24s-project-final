@@ -44,7 +44,7 @@ def add_label():
     return 'Success!'
 
 # Gets all artists of a label 
-@labels.route('/labels', methods=['GET'])
+@labels.route('/label/<label_id>', methods=['GET'])
 def artists_of_label(label_id):
     cursor = db.get_db().cursor()
 
