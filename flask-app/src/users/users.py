@@ -5,7 +5,7 @@ from src import db
 user = Blueprint('user', __name__)
 
 # gets all users
-@user.route('/user', methods=['GET'])
+@user.route('/users', methods=['GET'])
 def get_all_users():
     # get a cursor object from the database
     cursor = db.get_db().cursor()
@@ -30,8 +30,32 @@ def get_all_users():
 
     return jsonify(json_data)
 
+@user.route('/user', methods=['POST'])
+def add_user():
+        # collecting data from the request object 
+    the_data = request.json
+    current_app.logger.info(the_data)
 
-@user.route('/user/<userID>', methods=['PUT'])
+    #extracting the variable
+    first_name = the_data['user_first_name']
+    last_name = the_data['user_last_name']
+    bio = the_data['user_bio']
+    email = the_data['user_email']
+    # social_media = the_data['product_category']
+    # Constructing the query
+    
+    query = f"INSERT INTO User (first_name, last_name, email, bio)" \
+        f"VALUES ('{first_name}', '{last_name}, '{email}', '{bio}');"
+    current_app.logger.info(query)
+
+    # executing and committing the insert statement 
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    
+    return 'Success!'
+
+@user.route('/users/<userID>', methods=['PUT'])
 def update_user(userID):
     # collecting data from the request object 
     the_data = request.json
@@ -57,7 +81,7 @@ def update_user(userID):
     
     return 'Success!'
 
-@user.route('/user/<userID>/bio', methods=['PUT'])
+@user.route('/users/<userID>/bio', methods=['PUT'])
 def update_user_bio(userID):
     # collecting data from the request object 
     the_data = request.json
