@@ -45,7 +45,7 @@ def add_user():
     # Constructing the query
     
     query = f"INSERT INTO User (first_name, last_name, email, bio)" \
-        f"VALUES ('{first_name}', '{last_name}, '{email}', '{bio}');"
+        f"VALUES ('{first_name}', '{last_name}', '{email}', '{bio}');"
     current_app.logger.info(query)
 
     # executing and committing the insert statement 

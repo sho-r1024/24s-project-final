@@ -91,15 +91,12 @@ def add_new_song():
     return 'Success!'
 
 # Delete a song
-@artists.route('/music', methods=['DELETE'])
-def delete_song():
+@artists.route('/music/<music_id>', methods=['DELETE'])
+def delete_song(music_id):
     
     # collecting data from the request object 
     the_data = request.json
     current_app.logger.info(the_data)
-
-    #extracting the variable
-    music_id = the_data['music_id']
 
     # Constructing the query
     query = 'delete from music where '
