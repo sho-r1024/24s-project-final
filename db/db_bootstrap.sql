@@ -137,9 +137,9 @@ create table if not exists Feedback (
 
 SELECT * FROM Music;
 
--- insert into User (user_id, first_name, last_name, email, social_media, bio) values (1, 'Hi', 'Burling', 'hburling0@unesco.org', '@CDFnBi', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.'); --
--- insert into User (user_id, first_name, last_name, email, social_media, bio) values (2, 'Olivero', 'Neaverson', 'oneaverson1@arizona.edu', '@VRdnzv', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
--- Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.'); --
+insert into User (user_id, first_name, last_name, email, social_media, bio) values (1, 'Hi', 'Burling', 'hburling0@unesco.org', '@CDFnBi', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.'); --
+insert into User (user_id, first_name, last_name, email, social_media, bio) values (2, 'Olivero', 'Neaverson', 'oneaverson1@arizona.edu', '@VRdnzv', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.'); --
 insert into User (user_id, first_name, last_name, email, social_media, bio) values (3, 'Elva', 'Hamor', 'ehamor2@berkeley.edu', '@GtDeuiqLE', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.');
 insert into User (user_id, first_name, last_name, email, social_media, bio) values (4, 'Wash', 'Enbury', 'wenbury3@networkadvertising.org', '@hqcbWVQeSE', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
 
