@@ -1,5 +1,4 @@
-
-create database if not exists Cosign;
+CREATE DATABASE if not exists Cosign;
 
 grant all privileges on Cosign.* to 'webapp'@'%';
 flush privileges;
@@ -86,7 +85,7 @@ create table if not exists Music (
     PRIMARY KEY (song_id),
     artist_id INT NOT NULL,
     genre varchar(30),
-    playtime int DEFAULT 0,
+    playtime varchar(50) default '0',
     CONSTRAINT fk_song_artist FOREIGN KEY (song_id)
                                  REFERENCES Artists(artist_id)
                                  ON DELETE cascade ON UPDATE cascade
@@ -136,9 +135,11 @@ create table if not exists Feedback (
                                     ON DELETE cascade ON UPDATE cascade
 );
 
-insert into User (user_id, first_name, last_name, email, social_media, bio) values (1, 'Hi', 'Burling', 'hburling0@unesco.org', '@CDFnBi', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.');
-insert into User (user_id, first_name, last_name, email, social_media, bio) values (2, 'Olivero', 'Neaverson', 'oneaverson1@arizona.edu', '@VRdnzv', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
--- Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.');
+SELECT * FROM Music;
+
+-- insert into User (user_id, first_name, last_name, email, social_media, bio) values (1, 'Hi', 'Burling', 'hburling0@unesco.org', '@CDFnBi', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.'); --
+-- insert into User (user_id, first_name, last_name, email, social_media, bio) values (2, 'Olivero', 'Neaverson', 'oneaverson1@arizona.edu', '@VRdnzv', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+-- Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.'); --
 insert into User (user_id, first_name, last_name, email, social_media, bio) values (3, 'Elva', 'Hamor', 'ehamor2@berkeley.edu', '@GtDeuiqLE', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.');
 insert into User (user_id, first_name, last_name, email, social_media, bio) values (4, 'Wash', 'Enbury', 'wenbury3@networkadvertising.org', '@hqcbWVQeSE', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
 
@@ -256,16 +257,16 @@ insert into Contracts (contract_id, contract_artist_id, contract_label_id, contr
 insert into Contracts (contract_id, contract_artist_id, contract_label_id, contract_manager_id) values (9, 9, 9, 29);
 insert into Contracts (contract_id, contract_artist_id, contract_label_id, contract_manager_id) values (10, 10, 10, 30);
 
-insert into Creatives (creative_id, follower_count) values (11, 286628258);
-insert into Creatives (creative_id, follower_count) values (12, 613816295);
-insert into Creatives (creative_id, follower_count) values (13, 195120195);
-insert into Creatives (creative_id, follower_count) values (14, 132655571);
-insert into Creatives (creative_id, follower_count) values (15, 155168844);
-insert into Creatives (creative_id, follower_count) values (16, 919925122);
-insert into Creatives (creative_id, follower_count) values (17, 281465853);
-insert into Creatives (creative_id, follower_count) values (18, 976330516);
-insert into Creatives (creative_id, follower_count) values (19, 693971426);
-insert into Creatives (creative_id, follower_count) values (20, 851314276);
+insert into Creatives (creative_id) values (11);
+insert into Creatives (creative_id) values (12);
+insert into Creatives (creative_id) values (13);
+insert into Creatives (creative_id) values (14);
+insert into Creatives (creative_id) values (15);
+insert into Creatives (creative_id) values (16);
+insert into Creatives (creative_id) values (17);
+insert into Creatives (creative_id) values (18);
+insert into Creatives (creative_id) values (19);
+insert into Creatives (creative_id) values (20);
 
 -- insert into Feedback (feedback_id, item_id, user_id, rating) values (1, 1, 1, 6);
 -- insert into Feedback (feedback_id, item_id, user_id, rating) values (2, 2, 2, 8);
@@ -350,7 +351,7 @@ insert into Creatives (creative_id, follower_count) values (20, 851314276);
 
 insert into Music (song_id, artist_id, genre, playtime) values (1, 1, 'Reggae', '4:30');
 insert into Music (song_id, artist_id, genre, playtime) values (2, 2, 'Hip Hop', '3:00');
-insert into Music (song_id, artist_id, genre, playtime) values (3, 3, 'Pop', '2:15');
+insert into Music (song_id, artist_id, genre, playtime) values (3, 3, 'Pop', '2.15');
 insert into Music (song_id, artist_id, genre, playtime) values (4, 4, 'Pop', '2:15');
 insert into Music (song_id, artist_id, genre, playtime) values (5, 5, 'R&B', '3:45');
 insert into Music (song_id, artist_id, genre, playtime) values (6, 6, 'Pop', '3:00');
