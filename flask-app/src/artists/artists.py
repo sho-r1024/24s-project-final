@@ -99,11 +99,11 @@ def delete_song():
     current_app.logger.info(the_data)
 
     #extracting the variable
-    music_id = the_data['music_id']
+    music_id = the_data['song_id']
 
     # Constructing the query
-    query = 'delete from music where '
-    query += 'music_id = ' + music_id + ';'
+    query = 'delete from Music where '
+    query += 'song_id = ' + music_id + ';'
     current_app.logger.info(query)
 
     # executing and committing the insert statement 

@@ -85,7 +85,7 @@ create table if not exists Music (
     PRIMARY KEY (song_id),
     artist_id INT NOT NULL,
     genre varchar(30),
-    playtime varchar(50) default '0',
+    playtime int default 0,
     CONSTRAINT fk_song_artist FOREIGN KEY (song_id)
                                  REFERENCES Artists(artist_id)
                                  ON DELETE cascade ON UPDATE cascade
@@ -349,16 +349,16 @@ insert into Creatives (creative_id) values (20);
 -- insert into Feedback (feedback_id, item_id, user_id, rating) values (79, 79, 79, 6);
 -- insert into Feedback (feedback_id, item_id, user_id, rating) values (80, 80, 80, 8);
 
-insert into Music (song_id, artist_id, genre, playtime) values (1, 1, 'Reggae', '4:30');
-insert into Music (song_id, artist_id, genre, playtime) values (2, 2, 'Hip Hop', '3:00');
-insert into Music (song_id, artist_id, genre, playtime) values (3, 3, 'Pop', '2.15');
-insert into Music (song_id, artist_id, genre, playtime) values (4, 4, 'Pop', '2:15');
-insert into Music (song_id, artist_id, genre, playtime) values (5, 5, 'R&B', '3:45');
-insert into Music (song_id, artist_id, genre, playtime) values (6, 6, 'Pop', '3:00');
-insert into Music (song_id, artist_id, genre, playtime) values (7, 7, 'Rock', '3:45');
-insert into Music (song_id, artist_id, genre, playtime) values (8, 8, 'Rock', '3:45');
-insert into Music (song_id, artist_id, genre, playtime) values (9, 9, 'Metal', '3:00');
-insert into Music (song_id, artist_id, genre, playtime) values (10, 10, 'Metal', '4:30');
+insert into Music (song_id, artist_id, genre, playtime) values (1, 1, 'Reggae', 270);
+insert into Music (song_id, artist_id, genre, playtime) values (2, 2, 'Hip Hop', 180);
+insert into Music (song_id, artist_id, genre, playtime) values (3, 3, 'Pop', 135);
+insert into Music (song_id, artist_id, genre, playtime) values (4, 4, 'Pop', 135);
+insert into Music (song_id, artist_id, genre, playtime) values (5, 5, 'R&B', 225);
+insert into Music (song_id, artist_id, genre, playtime) values (6, 6, 'Pop', 180);
+insert into Music (song_id, artist_id, genre, playtime) values (7, 7, 'Rock', 225);
+insert into Music (song_id, artist_id, genre, playtime) values (8, 8, 'Rock', 225);
+insert into Music (song_id, artist_id, genre, playtime) values (9, 9, 'Metal', 180);
+insert into Music (song_id, artist_id, genre, playtime) values (10, 10, 'Metal', 270);
 
 insert into Portfolios (portfolio_id, author_id, title, views) values (1, 11, 'Light of Day', 93020880);
 insert into Portfolios (portfolio_id, author_id, title, views) values (2, 12, 'Going My Way', 853530499);
@@ -375,7 +375,7 @@ insert into Portfolios (portfolio_id, author_id, title, views) values (10, 20, '
 -- insert into Services (service_id, creative_id, title, price) values (22, 22, 'Sherlock Holmes Faces Death', 902.54);
 -- insert into Services (service_id, creative_id, title, price) values (23, 23, 'Wartorn: 1861-2010', 993.57);
 -- insert into Services (service_id, creative_id, title, price) values (24, 24, 'Pornorama', 330.88);
--- insert into Services (service_id, creative_id, title, price) values (25, 25, 'Tigger Movie, The', 991.11);
+-- nsert into Services (service_id, creative_id, title, price) values (25, 25, 'Tigger Movie, The', 991.11);
 -- insert into Services (service_id, creative_id, title, price) values (26, 26, 'Two for the Money', 433.39);
 -- insert into Services (service_id, creative_id, title, price) values (27, 27, 'Happy Accidents', 885.46);
 -- insert into Services (service_id, creative_id, title, price) values (28, 28, 'Hans Christian Andersen', 371.19);
